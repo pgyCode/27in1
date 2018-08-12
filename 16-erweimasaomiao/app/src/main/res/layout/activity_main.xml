@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:padding="43dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/scan"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/btn_set"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@color/transparent"
+        android:padding="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/make"
+        android:layout_weight="1"
+        android:text="二维码"/>
+
+    <ImageButton
+        android:id="@+id/btn_album"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@color/transparent"
+        android:padding="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/album"
+        android:layout_weight="1"
+        android:text="扫描二维码"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/edt_bg"
+            android:textColor="@color/colorPrimary"
+            android:text="我有评价"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_jianyi"
+            android:background="@drawable/edt_bg"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:text="我有建议"/>
+    </RelativeLayout>
+
+</LinearLayout>

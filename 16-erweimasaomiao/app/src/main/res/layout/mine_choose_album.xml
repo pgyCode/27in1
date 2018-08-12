@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="选择相册"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:id="@+id/txt_toname"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="?attr/actionBarSize"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_back"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:src="@drawable/backer"
+            android:padding="18dp"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lst"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/loading"
+        android:id="@+id/loading"/>
+</LinearLayout>

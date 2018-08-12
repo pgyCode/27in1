@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="选择图片"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:id="@+id/txt_toname"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="?attr/actionBarSize"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_back"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:src="@drawable/backer"
+            android:padding="18dp"/>
+    </RelativeLayout>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/grid"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:layout_below="@id/header"
+        android:layout_height="match_parent">
+
+    </GridView>
+</RelativeLayout>
